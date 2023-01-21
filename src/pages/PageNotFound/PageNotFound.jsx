@@ -1,4 +1,4 @@
-export function PageNoteFound(props) {
-    return <>PageNoteFound</>;
+export function PageNotFound(props) {
+    return <>PageNotFound</>;
   }
   

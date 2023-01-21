@@ -1,0 +1,16 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "Solitude",
+      "content": "Example note 1",
+      "created_at": "01/21/2023"
+    },
+    {
+      "title": "bandeya re bandeya ",
+      "content": "Some note content",
+      "created_at": "01/21/2023",
+      "id": 2
+    }
+  ]
+}
