@@ -20,7 +20,7 @@ export function TextCard({ title, content, subtitle, onClick, onClickTrash }) {
       onMouseLeave={() => setIsCardHovered(false)}
     >
       <div className="card-body">
-        <div>
+        <div className={s.title_row}>
           <h5 className={s.title_row}>{title}</h5>
           <Trash
             onClick={onClickTrash_}
