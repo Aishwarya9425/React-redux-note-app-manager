@@ -1,7 +1,7 @@
 import { ButtonPrimary } from "components/ButtonPrimary/ButtonPrimary";
 import { PencilFill, TrashFill } from "react-bootstrap-icons";
 import s from "./style.module.css";
-export function NoteForm({ title }) {
+export function NoteForm({ title, onClickEdit, onClickDelete, onSubmit }) {
   //small components
   const actionIcons = (
     <>
