@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import { NoteAPI } from "api/note-api";
 import { useDispatch } from "react-redux";
 import { setNoteList } from "store/notes/notes-slice";
+import s from "./style.module.css";
+
 
 export function App() {
   const dispatch = useDispatch();
@@ -15,12 +17,14 @@ export function App() {
   useEffect(() => {
     fetchAllNotes();
   }, []);
-  
+
   return (
     <div>
       App Component!
       <Header />
-      <Outlet />
+      <div className={s.workspace}>
+        <Outlet />
+      </div>
     </div>
   );
 }
