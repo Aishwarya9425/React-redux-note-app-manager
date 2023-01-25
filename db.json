@@ -11,48 +11,6 @@
       "content": "Some note content",
       "created_at": "01/21/2023",
       "id": 2
-    },
-    {
-      "title": "Title1",
-      "content": "Content1",
-      "created_at": "1/25/2023",
-      "id": 3
-    },
-    {
-      "title": "ewewe",
-      "content": "sdadads",
-      "created_at": "1/25/2023",
-      "id": 4
-    },
-    {
-      "title": "ssds",
-      "content": "dfasf",
-      "created_at": "1/25/2023",
-      "id": 5
-    },
-    {
-      "title": "aaaa",
-      "content": "ddddd",
-      "created_at": "1/25/2023",
-      "id": 6
-    },
-    {
-      "title": "xfdffds",
-      "content": "fggffggf",
-      "created_at": "1/25/2023",
-      "id": 7
-    },
-    {
-      "title": "wwww",
-      "content": "rrrrr",
-      "created_at": "1/25/2023",
-      "id": 8
-    },
-    {
-      "title": "www",
-      "content": "eeee",
-      "created_at": "1/25/2023",
-      "id": 9
     }
   ]
 }

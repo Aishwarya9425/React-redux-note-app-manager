@@ -11,6 +11,7 @@ export function NoteList(props) {
   return (
     <div className={`row justify-content-center`}>
       {noteList.map((note) => {
+        console.log("note", note);
         return (
           <div key={note.id} className={s.card_container}>
             <TextCard
