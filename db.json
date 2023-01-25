@@ -13,22 +13,16 @@
       "id": 2
     },
     {
-      "title": "qqq",
-      "content": "qq",
+      "title": "Focus",
+      "content": "Only on your goals ",
       "created_at": "1/25/2023",
       "id": 3
     },
     {
-      "title": "eee",
-      "content": "ee",
+      "title": "Love",
+      "content": "Does it even exist? Why is it even necessary?! Cant we all function like robots please.",
       "created_at": "1/25/2023",
       "id": 4
-    },
-    {
-      "title": "ccc",
-      "content": "ccc",
-      "created_at": "1/25/2023",
-      "id": 5
     }
   ]
 }
