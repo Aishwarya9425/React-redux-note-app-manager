@@ -12,13 +12,13 @@ export function NoteList(props) {
     <div className={`row justify-content-center`}>
       {noteList.map((note) => {
         return (
-          <div className={s.card_container}>
+          <div key={note.id} className={s.card_container}>
             <TextCard
               title={note.title}
               content={note.content}
               subtitle={note.created_at}
               onClick={() => {
-                navigate("/note/" + note.id);
+                navigate("note/" + note.id);
               }}
               onClickTrash={() => {
                 alert("onClickTrash");
@@ -26,7 +26,7 @@ export function NoteList(props) {
             />
           </div>
         );
-      })}{" "}
+      })}
     </div>
   );
 }
