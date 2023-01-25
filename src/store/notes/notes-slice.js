@@ -10,6 +10,7 @@ export const noteSlice = createSlice({
       state.noteList = action.payload;
     },
     addNote: (state, action) => {
+      console.log("action.payload", action.payload);
       state.noteList.push(action.payload);
     },
   },
