@@ -4,7 +4,7 @@ const BASE_URL = "http://localhost:3200/notes";
 
 export class NoteAPI {
   static async create(note) {
-    return await axios.post(`${BASE_URL}`, note).data;
+    return (await axios.post(`${BASE_URL}`, note)).data;
   }
 
   static async fetchAll() {

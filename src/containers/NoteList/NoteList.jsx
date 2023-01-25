@@ -6,12 +6,10 @@ import s from "./style.module.css";
 export function NoteList(props) {
   //useSelector -- A hook to access the redux store's state.
   const noteList = useSelector((store) => store.noteSlice.noteList);
-  console.log(noteList);
   const navigate = useNavigate();
   return (
     <div className={`row justify-content-center`}>
       {noteList.map((note) => {
-        console.log("note", note);
         return (
           <div key={note.id} className={s.card_container}>
             <TextCard
