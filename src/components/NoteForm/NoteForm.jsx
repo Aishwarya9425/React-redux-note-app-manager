@@ -25,8 +25,8 @@ export function NoteForm({ title, onClickEdit, onClickDelete, onSubmit }) {
   });
 
   const [formErrors, setFormErrors] = useState({
-    title: undefined,
-    content: undefined,
+    title: true, // by default form is disabled
+    content: true,
   });
   const updateFormValues = (e) => {
     const name = e.target.name;
@@ -41,6 +41,16 @@ export function NoteForm({ title, onClickEdit, onClickDelete, onSubmit }) {
       ...formErrors,
       [fieldName]: VALIDATOR[fieldName](fieldValue),
     });
+  };
+
+  const hasError = () => {
+    for (const fieldName in formErrors) {
+      if (formErrors[fieldName]) {
+        //if defined
+        return true;
+      }
+    }
+    return false;
   };
 
   //small components
@@ -87,6 +97,7 @@ export function NoteForm({ title, onClickEdit, onClickDelete, onSubmit }) {
   const submitBtn = (
     <div className={s.submit_btn}>
       <ButtonPrimary
+        isDisabled={hasError()}
         onClick={() => {
           onSubmit(formValues);
         }}
