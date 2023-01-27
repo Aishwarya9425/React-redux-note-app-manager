@@ -3,6 +3,8 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { SearchBar } from "components/SearchBar/SearchBar";
 import { useState } from "react";
+import s from "./style.module.css";
+
 export function NoteBrowse(props) {
   const noteList = useSelector((store) => store.noteSlice.noteList);
   //save the current search
@@ -19,7 +21,7 @@ export function NoteBrowse(props) {
     return containsTitle || containsContent;
   });
   return (
-    <>
+    <div className={s.container}>
       <div className="row justify-content-center mb-5">
         <div className="col-sm-12 col-md-5">
           <SearchBar
@@ -37,6 +39,6 @@ export function NoteBrowse(props) {
         </div>
       )}
       <NoteList noteList={filteredNoteList} />
-    </>
+    </div>
   );
 }

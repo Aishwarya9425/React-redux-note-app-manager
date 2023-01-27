@@ -5,6 +5,11 @@
   height: 300px;
   width: 300px;
   padding: 20px;
+  background-image: url("../../assets/images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  background-attachment: fixed;
 }
 
 .title_row {

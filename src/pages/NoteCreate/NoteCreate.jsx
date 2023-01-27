@@ -16,7 +16,7 @@ export function NoteCreate(props) {
       created_at: new Date().toLocaleDateString(),
     }); // + date of creation
     dispatch(addNote(createdNote));
-    alert(JSON.stringify(formValues));
+    alert("You have created a new note!");
     navigate("/");
   };
   return (
