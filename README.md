@@ -1,5 +1,7 @@
 # React notes manager
-![image](https://user-images.githubusercontent.com/51038336/215120422-0cc13873-f8b2-444b-b639-58de642806f2.png)
+
+![app](https://user-images.githubusercontent.com/51038336/215120605-15ec32b1-fde3-4e42-a8f3-d8a9319833d6.png)
+
 
 ## Getting Started
 ```bash
