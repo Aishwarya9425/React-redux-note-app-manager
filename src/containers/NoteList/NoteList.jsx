@@ -3,11 +3,10 @@ import { TextCard } from "components/TextCard/TextCard";
 import { useNavigate } from "react-router-dom";
 import s from "./style.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { updateNote, deleteNote } from "store/notes/notes-slice";
+import { deleteNote } from "store/notes/notes-slice";
 
-export function NoteList(props) {
+export function NoteList({noteList}) {
   //useSelector -- A hook to access the redux store's state.
-  const noteList = useSelector((store) => store.noteSlice.noteList);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 

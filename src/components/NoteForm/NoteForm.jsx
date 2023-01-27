@@ -132,9 +132,7 @@ export function NoteForm({
       <div className={`mb-3 ${s.title_input_container}`}>
         {isEditable && titleInput}
       </div>
-      <div className="mb-3">
-        {isEditable ? contentInput : <pre>{note.content}</pre>}
-      </div>
+      <div className="mb-3">{isEditable ? contentInput : note.content}</div>
       {onSubmit && submitBtn}
     </div>
   );
