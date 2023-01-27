@@ -93,7 +93,7 @@ export function NoteForm({
 
   //textarea for contentInput
   const contentInput = (
-    <div className="mb-5">
+    <div className={`mb-5 ${s.contentInput}`}>
       <label className="form-label"> Content </label>
       <textarea
         onChange={updateFormValues}
@@ -124,7 +124,7 @@ export function NoteForm({
     <div className={s.container}>
       <div className="row justify-content-space-between">
         <div className="col-10">
-          <h2 className="mb-3">{title}</h2>
+          <h2 className={`mb-3 ${s.title}`}>{title}</h2>
         </div>
         {actionIcons}
       </div>
@@ -132,7 +132,9 @@ export function NoteForm({
       <div className={`mb-3 ${s.title_input_container}`}>
         {isEditable && titleInput}
       </div>
-      <div className="mb-3">{isEditable ? contentInput : note.content}</div>
+      <div className={`mb-3 ${s.contentInput}`}>
+        {isEditable ? contentInput : note.content}
+      </div>
       {onSubmit && submitBtn}
     </div>
   );

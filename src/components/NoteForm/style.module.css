@@ -2,14 +2,31 @@
   padding: 50px;
   background-color: white;
   border-radius: 22px;
+  background-image: url("../../assets/images/a.gif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  background-attachment: fixed;
 }
 
+.title {
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+.contentInput {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: large;
+}
 .icon {
   cursor: pointer;
 }
 
 .title_input_container {
   max-width: 300px;
+  color: white;
+  font-family: cursive;
 }
 
 .submit_btn {

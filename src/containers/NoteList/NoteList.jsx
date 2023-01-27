@@ -5,7 +5,7 @@ import s from "./style.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteNote } from "store/notes/notes-slice";
 
-export function NoteList({noteList}) {
+export function NoteList({ noteList }) {
   //useSelector -- A hook to access the redux store's state.
   const navigate = useNavigate();
   const dispatch = useDispatch();

@@ -1,7 +1,6 @@
 import s from "./style.module.css";
 import { Logo } from "components/Logo/Logo";
 import write from "assets/images/write.png";
-
 import { ButtonPrimary } from "components/ButtonPrimary/ButtonPrimary";
 import { useNavigate } from "react-router-dom";
 export function Header(props) {
@@ -12,7 +11,7 @@ export function Header(props) {
         <Logo
           onClick={() => navigate("/")}
           image={write}
-          title={"NoteIt! "}
+          title={"NoteIt!"}
           subtitle={"Your go to journal!"}
         />
       </div>

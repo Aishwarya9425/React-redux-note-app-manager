@@ -1,12 +1,11 @@
 .logo_txt {
   font-size: 30px;
   font-weight: 700;
-  color: #0d6efd;
+  color: whitesmoke;
 }
 
 .container {
   display: flex;
-  /* Otherwise the clickable area for the logo is to wide */
   width: fit-content;
   cursor: pointer;
 }
@@ -16,6 +15,6 @@
 }
 
 .subtitle {
-  color: #b8b8b8;
+  color: gold;
   word-wrap: break-word;
 }
