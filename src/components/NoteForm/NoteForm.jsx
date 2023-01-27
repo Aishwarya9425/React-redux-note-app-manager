@@ -27,13 +27,14 @@ export function NoteForm({
   //one state for all form values
 
   const [formValues, setFormValues] = useState({
-    title: "",
-    content: "",
+    title: note?.title, //if note exists then display title, set form values with existing values
+    content: note?.content,
   });
 
+  //if when editing, if note exists then enable else disable
   const [formErrors, setFormErrors] = useState({
-    title: true, // by default form is disabled
-    content: true,
+    title: note?.title ? undefined : true,
+    content: note?.content ? undefined : true,
   });
   const updateFormValues = (e) => {
     const name = e.target.name;
@@ -84,6 +85,7 @@ export function NoteForm({
         type="text"
         name="title"
         className="form-control"
+        value={formValues.title}
       />
       <FieldError msg={formErrors.title} />
     </div>
@@ -99,6 +101,7 @@ export function NoteForm({
         name="content"
         className="form-control"
         rows="5"
+        value={formValues.content}
       />
       <FieldError msg={formErrors.content} />
     </div>
