@@ -20,7 +20,6 @@ export function App() {
 
   return (
     <div>
-      App Component!
       <Header />
       <div className={s.workspace}>
         <Outlet />

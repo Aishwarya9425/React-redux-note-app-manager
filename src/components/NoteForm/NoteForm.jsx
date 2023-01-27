@@ -27,8 +27,8 @@ export function NoteForm({
   //one state for all form values
 
   const [formValues, setFormValues] = useState({
-    title: note?.title, //if note exists then display title, set form values with existing values
-    content: note?.content,
+    title: note?.title || "", //if note exists then display title, set form values with existing values
+    content: note?.content || "",
   });
 
   //if when editing, if note exists then enable else disable

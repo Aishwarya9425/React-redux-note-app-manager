@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { NoteAPI } from "api/note-api";
-import { updateNote } from "store/notes/notes-slice";
+import { updateNote, deleteNote } from "store/notes/notes-slice";
+import { useNavigate } from "react-router-dom";
 
 export function Note(props) {
   const { noteId } = useParams();
@@ -13,6 +14,7 @@ export function Note(props) {
   );
   //console.log("note", note);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [isEditable, setisEditable] = useState(false);
 
   const submit = async (formValues) => {
@@ -22,6 +24,14 @@ export function Note(props) {
     setisEditable(false); //after submitting switch to read only mode
   };
 
+  async function deleteNote_() {
+    if (window.confirm("Are you sure you want to delete this note?")) {
+      NoteAPI.deleteById(note.id);
+      dispatch(deleteNote(note));
+      navigate("/");
+    }
+  }
+
   return (
     <>
       {note && (
@@ -29,9 +39,7 @@ export function Note(props) {
           isEditable={isEditable}
           title={isEditable ? "You can now edit the note..." : note.title}
           note={note}
-          onClickDelete={() => {
-            alert("delete");
-          }}
+          onClickDelete={deleteNote_}
           onClickEdit={() => {
             setisEditable(!isEditable);
           }}
