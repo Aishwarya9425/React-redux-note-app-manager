@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://react-redux-note-app-manager.vercel.app/notes";
+const BASE_URL = "http://localhost:3200/notes";
 
 export class NoteAPI {
   static async create(formValues) {
