@@ -1,6 +1,6 @@
 import s from "./style.module.css";
-import { Logo } from "components/Logo/Logo";
 import write from "assets/images/write.png";
+import { Superlogo } from "components/Superlogo/Superlogo";
 import { ButtonPrimary } from "components/ButtonPrimary/ButtonPrimary";
 import { useNavigate } from "react-router-dom";
 export function Header(props) {
@@ -8,7 +8,7 @@ export function Header(props) {
   return (
     <div className={`row ${s.container}`}>
       <div className="col-xs-12 col-sm-4">
-        <Logo
+        <Superlogo
           onClick={() => navigate("/")}
           image={write}
           title={"NoteIt!"}
