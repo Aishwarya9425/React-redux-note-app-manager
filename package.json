@@ -17,7 +17,7 @@
     "build": "react-scripts build & json-server --watch db.json -p 3200",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev-server": "json-server --watch db.json -p 3200"
+    "server": "npx json-server --watch db.json --port 3001"
   },
   "eslintConfig": {
     "extends": [
