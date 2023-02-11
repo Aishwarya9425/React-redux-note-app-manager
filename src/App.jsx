@@ -6,7 +6,6 @@ import { useDispatch } from "react-redux";
 import { setNoteList } from "store/notes/notes-slice";
 import s from "./style.module.css";
 
-
 export function App() {
   const dispatch = useDispatch();
 
@@ -16,7 +15,7 @@ export function App() {
   }
   useEffect(() => {
     fetchAllNotes();
-  }, []);
+  });
 
   return (
     <div>

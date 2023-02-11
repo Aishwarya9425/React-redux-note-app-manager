@@ -2,7 +2,7 @@ import { NoteAPI } from "api/note-api";
 import { TextCard } from "components/TextCard/TextCard";
 import { useNavigate } from "react-router-dom";
 import s from "./style.module.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { deleteNote } from "store/notes/notes-slice";
 
 export function NoteList({ noteList }) {
