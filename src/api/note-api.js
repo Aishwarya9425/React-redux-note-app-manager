@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://json-server-for-react-note-app.vercel.app/notes";
+const BASE_URL = "http://144.24.148.242:3002/notes";
 
 export class NoteAPI {
   static async create(formValues) {
